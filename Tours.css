@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    
+} 
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.main-desctop{
+    padding-bottom: 50px;
+}
+
+.mobile-main{
+    display: none;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 15px;
+}
+
+.text-logo{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+
+}
+
+.image1{
+    width: 140px;
+    height: 130px;
+}
+
+.desctop-nav{
+    display: flex;
+    align-items: center;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+li{
+    list-style: none;
+}
+
+.ip{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+form{
+    border: 1px solid gray;
+    border-radius: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    align-items: center;
+}
+input{
+    font-size: 18px;
+    border: none;
+    outline: none;
+    height: 30px;
+}
+
+button{
+    border: none;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+#myButton:hover {
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 55px;
+    display: flex;
+    align-items: center;
+    color: black;
+    transition: transform 0.3s ease-in-out;
+}
+
+a:hover{
+    background: linear-gradient(#f6b036 50%, #004d95 50%);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    transform: scale(1.1);
+}
+
+.hr1{
+    display: flex;
+    justify-content: center;
+}
+
+.hr2{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.hr3{
+    display: flex;
+    justify-content: center;
+}
+
+.main-text1{
+    display: flex;
+    justify-content: center;
+
+}
+
+.tour-text{
+    font-size: 50px;
+    padding-top: 20px;
+}
+
+.Tours{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    gap: 100px;
+    
+}
+
+.image2{
+    width: 350px;
+    height: 235px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.text2{
+    text-align: center;
+    font-size: 25px;
+    line-height: 40px;
+    
+}
+
+.image2:hover{
+    transform: scale(0.9);
+}
+
+.Tours1{
+    display: flex;
+    justify-content: center;
+
+}
+
+@media screen and (max-width: 768px) {
+    .image1 {
+        width: 90px;
+        height: 80px;
+    }
+    header{flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;}
+    .logo{justify-content: center;
+        gap: 0px;}
+    .desctop-nav{display: none;}
+    .main-desctop{display: none;}
+    .text-logo {font-size: 20px;}
+    .mobile-nav{display: flex;
+    justify-content: center;}
+    .mobile-main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    hr{width: 75%;}
+    .hr2{width: 70%;}
+    a {
+        text-decoration: none;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        color: black;
+        transition: transform 0.3s ease-in-out;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        gap: 45px;
+    }
+    .tour-text{
+        font-size: 24px;
+        line-height: 30px;
+        padding-top: 5%;
+    }
+    .Tours {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 25px;
+        gap: 5%;
+    }
+    .text2 {
+        text-align: center;
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .image2 {
+        width: 250px;
+        height: 160px;
+        border-radius: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .ip {
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+    }
+    input {
+        font-size: 14px;
+        border: none;
+        outline: none;
+    }
+    img{
+        width: 65%;
+    }
+}
